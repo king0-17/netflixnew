@@ -1,0 +1,195 @@
+html,
+
+
+body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.foo {
+    background-image: url("images/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    
+}
+
+
+.signInContainer {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper {
+    min-width: 1050px;
+    min-height: 100%;
+    background-color: #141414;
+
+}
+.column {
+    background-color: rgba(31, 7, 7, 0.5);
+    min-height: 300px;
+    max-height: 100%;
+    width: 450px;
+    box-shadow: rgba(255, 255, 255, 0.1) 0 10px 10px;
+    padding: 20px 35px;
+    overflow-y: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.column form {
+    display: flex;
+    flex-direction: column;
+    padding-top: 24px;
+    color: #f00;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.column form input[type="text"],
+.column form input[type="email"],
+.column form input[type="password"] {
+    font-size: 14px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    background: transparent;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+
+}
+
+.column form input[type="submit"]{
+    background-color: #4285f4;
+    color: #fff;
+    height: 36px;
+    width: 88px;
+    border: none;
+    border-radius: 3px;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.column .header {
+    padding: 20px 0;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    
+
+}
+
+.column h3 {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    margin: 0;
+    padding-top: 16px;
+    color: rgb(194, 10, 10);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.column .header span {
+    font-size: 14px;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+
+
+}
+
+.column .header img {
+    height: 200px;
+    width: 200px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    
+    
+}
+
+.signInMessage {
+    font-size: 12px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.part {
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.errorMessage {
+    color: rgb(255, 0, 0);
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.previewImage,
+.previewVideo {
+    width: 100%;
+
+}
+
+.previewContainer {
+    position: relative;
+    display: flex;
+}
+
+.previewOverlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.3);
+    position: absolute;
+}
+
+.previewOverlay .mainDetails h3 {
+    color: #fff;
+    font-size: 40px;
+    margin: 15px 0;
+
+}
+
+.previewOverlay .mainDetails {
+    position: relative;
+    top: 35%;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.mainDetails button {
+    background-color: rgba(51,51,51,0.4);
+    color: #fff;
+    border: none;
+    min-width: 150px;
+    padding: 0 38px;
+    height: 50px;
+    max-height: 50px;
+    font-size: 18px;
+    border-radius: 2px;
+    margin-bottom: 15px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+button i {
+    color: inherit;
+}
+
+.mainDetails button:hover {
+    background-color: e6e6e6;
+    color: #000;
+
+}
