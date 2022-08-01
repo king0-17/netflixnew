@@ -22,7 +22,7 @@ require_once("includes/classes/Account.php");
             $_SESSION["userLoggedIn"] = $username;
             header("Location: index.php");
         }
-    }
+    }5
 
     function getInputValue($name) {
         if(isset($_POST[$name])) {

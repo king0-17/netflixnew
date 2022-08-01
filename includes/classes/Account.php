@@ -23,7 +23,7 @@ class Account {
     }
 
     public function login($un, $pw) {
-        $pw = hash("sha512", $pw);
+        $pw = hash("sha224", $pw);
 
         $query = $this->con->prepare("SELECT * FROM users WHERE username=:un AND password=:pw");
         $query->bindValue(":un", $un);
@@ -41,7 +41,7 @@ class Account {
 
     private function insertUserDetails($fn, $ln, $un, $em, $pw) {
         
-        $pw = hash("sha512", $pw);
+        $pw = hash("sha224", $pw);
         
         $query = $this->con->prepare("INSERT INTO users (firstName, lastName, username, email, password)
                                         VALUES (:fn, :ln, :un, :em, :pw)");

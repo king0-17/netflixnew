@@ -7,10 +7,9 @@ class EntityProvider {
 
         if($categoryId != null) {
             $sql .= "WHERE categoryId=:categoryId ";
-
         }
 
-        $sql .="ORDER BY RAND() LIMIT :limit";
+        $sql .= "ORDER BY RAND() LIMIT :limit";
 
         $query = $con->prepare($sql);
 
@@ -27,9 +26,7 @@ class EntityProvider {
         }
 
         return $result;
-
     }
 
 }
-
 ?>
